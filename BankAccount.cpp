@@ -126,3 +126,14 @@ int main() {
 
     return 0;
 }
+
+
+//                             CORE LOGIC
+// Loop chalao tab tak jab tak power > 0 hai:
+
+//     Kya current bit '1' hai (Power ODD hai)?
+//     ├── HAAN -> ans mein x ko multiply kar do (Is weight ko include kar liya)
+//     └── NAHI -> Kuch mat karo
+
+//     x ko square karo (Agle bit ke liye value tayar karo: x^1 -> x^2 -> x^4...)
+//     Power ko 2 se divide karo (Agla bit check karne ke liye aage badho)
